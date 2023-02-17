@@ -1,4 +1,3 @@
-26 lines (24 sloc)  429 Bytes
 #include <stdio.h>
 /**
  * main - Prints all possible combinations of two different digits,
