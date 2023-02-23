@@ -1,19 +1,19 @@
+#include "main.h"
 #include <stdio.h>
 /**
- * main - print the alphabet in lowercase, except q and e.
- *
- * Return: 0
-*/
+ * main - Prints out the larget prime factor of 612852475143
+ * Return:return 0 with success.
+ */
 int main(void)
 {
-	char letter;
+	long i;
+	long num = 612852475143;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (i = 2; i < num; i++)
 	{
-		if (letter != 'e' && letter != 'q')
-		putchar(letter);
+		if (num % i == 0)
+			num /= i;
 	}
-	putchar('\n');
-
+	printf("%li\n", num);
 	return (0);
 }
