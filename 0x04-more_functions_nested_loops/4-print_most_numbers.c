@@ -1,19 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-/**
- * main - Prints out the larget prime factor of 612852475143
- * Return:return 0 with success.
- */
-int main(void)
-{
-	long i;
-	long num = 612852475143;
 
-	for (i = 2; i < num; i++)
+/**
+ * print_most_numbers - prints most numbers
+ *
+ * Return: void
+ */
+
+void print_most_numbers(void)
+{
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
 	{
-		if (num % i == 0)
-			num /= i;
+	if (!(c == '2' || c == '4'))
+	_putchar(c);
 	}
-	printf("%li\n", num);
-	return (0);
+	_putchar('\n');
 }
